@@ -1,0 +1,42 @@
+/* 15章課題 CSS */
+
+/* bodyのフォント種類を "Arial", "Meiryo", sans-serif に指定 */
+/* テキストは、全て中央寄せ */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center;
+}
+
+/* ルート要素のフォントサイズを20pxに設定 */
+html {
+  font-size: 20px;
+}
+
+/* 「名前」～「血液型」までの要素をhtmlファイルでは、id属性basicのdivタグで囲っている */
+/* 子孫要素の考え方を利用して、「侍太郎」「1990年1月1日」「O型」を太字 */
+/* それ以外のp要素は太字にならないように指定 */
+#basic p {
+  font-weight: bold;
+}
+
+.blue {
+  color: skyblue;
+}
+
+.pink {
+  color: rgb(255, 192, 203);
+}
+
+/* h1のフォントは… */
+/* Googleフォント「Josefin Sans」を、総称フォントは「sans-serif」を使用 */
+/* フォントサイズは、ルート要素の2倍になるように指定 */
+/* 文字間は、文字の大きさに対して1.2倍 */
+/* 影を付ける 影の大きさや色は自由 今回は色はラベンダー */
+/* h1の下に3px rgb(115, 115, 114) の実線 */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1.2em;
+  text-shadow: 1px 5px 2px #cab8d9;
+  border-bottom: solid 3px rgb(115, 115, 114);
+}
